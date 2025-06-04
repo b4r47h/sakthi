@@ -1,0 +1,46 @@
+[
+  {
+    "id": "mc1",
+    "name": "Exide XLT-Z4",
+    "price": 1050,
+    "mrp": 4000,
+    "type": "mc",
+    "code": "AAM-FL-5LB",
+    "image": "https://images.pexels.com/photos/5465247/pexels-photo-5465247.jpeg",
+    "description": "12V 32AH Battery for Two Wheelers",
+    "category": "mc"
+  },
+  {
+    "id": "mc2",
+    "name": "Exide Xplore 2.5L-C",
+    "price": 2800,
+    "mrp": 3200,
+    "type": "battery",
+    "code": "EX-XP-2.5LC",
+    "image": "https://images.pexels.com/photos/5465247/pexels-photo-5465247.jpeg",
+    "description": "12V 5AH Battery for Two Wheelers",
+    "category": "lmv"
+  },
+  {
+    "id": "mc3",
+    "name": "SF Sonic PowerRide",
+    "price": 4200,
+    "mrp": 4800,
+    "type": "battery",
+    "code": "SF-PR-12",
+    "image": "https://images.pexels.com/photos/5465247/pexels-photo-5465247.jpeg",
+    "description": "12V 9AH Battery for Two Wheelers",
+    "category": "hmv"
+  },
+  {
+    "id": "mc4",
+    "name": "Amaron Pro Bike 5L-B",
+    "price": 3500,
+    "mrp": 4000,
+    "type": "battery",
+    "code": "AAM-FL-5LB",
+    "image": "https://images.pexels.com/photos/5465247/pexels-photo-5465247.jpeg",
+    "description": "12V 32AH Battery for Two Wheelers",
+    "category": "riskshaw"
+  }
+]

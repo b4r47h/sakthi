@@ -1,0 +1,8 @@
+{
+    "workbench.panel.showLabels": true,
+    "workbench.sideBar.location": "left",
+    "workbench.activityBar.location": "default",
+    "workbench.activityBar.iconClickBehavior": "focus",
+    "workbench.colorTheme": "Low Eye Strain Solarized Dark+",
+    "workbench.editor.showTabs": "multiple"
+}
