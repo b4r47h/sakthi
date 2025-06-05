@@ -21,7 +21,7 @@ const products: Product[] = productsData;
 
 export default function ProductsPage() {
   const [filters, setFilters] = useState({
-    priceRange: [500, 30000],
+    priceRange: [500, 20000],
     category: 'all'
   });
 

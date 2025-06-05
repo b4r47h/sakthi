@@ -11,7 +11,7 @@ interface ProductFiltersProps {
 }
 
 export default function ProductFilters({ onFilterChange }: ProductFiltersProps) {
-  const [priceRange, setPriceRange] = useState([500, 30000]);
+  const [priceRange, setPriceRange] = useState([500, 20000]);
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const handlePriceChange = (newPriceRange: number[]) => {
@@ -34,7 +34,7 @@ export default function ProductFilters({ onFilterChange }: ProductFiltersProps) 
           <h3 className="font-medium">Price Range</h3>
           <Slider
             defaultValue={priceRange}
-            max={30000}
+            max={20000}
             step={100}
             value={priceRange}
             onValueChange={handlePriceChange}
@@ -57,15 +57,15 @@ export default function ProductFilters({ onFilterChange }: ProductFiltersProps) 
             </div>
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="mc" id="mc" />
-              <Label htmlFor="mc">Motorcycle (MC)</Label>
+              <Label htmlFor="mc">Motorcycles</Label>
             </div>
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="lmv" id="lmv" />
-              <Label htmlFor="lmv">Light Motor Vehicle (LMV)</Label>
+              <Label htmlFor="lmv">Light Motor Vehicle</Label>
             </div>
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="hmv" id="hmv" />
-              <Label htmlFor="hmv">Heavy Motor Vehicle (HMV)</Label>
+              <Label htmlFor="hmv">Heavy Motor Vehicle</Label>
             </div>
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="rickshaw" id="rickshaw" />

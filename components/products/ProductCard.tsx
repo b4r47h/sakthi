@@ -39,7 +39,6 @@ export default function ProductCard({ product }: ProductCardProps) {
         <p className="text-xs text-gray-500 mt-1">Code: {product.code}</p>
       </CardContent>
       <CardFooter className="p-4 pt-0">
-        <Button className="w-full">Add to Cart</Button>
       </CardFooter>
     </Card>
   );
