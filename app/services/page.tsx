@@ -1,5 +1,5 @@
 'use client';
-
+import AkarIconsThunder from '@/components/ui/AkarIconsThunder'
 import { useState,useEffect} from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -19,9 +19,9 @@ export default function ServicesPage() {
   // Array of services
   const services: Service[] = [
     {
-      name: 'Jump Start',
+      name: 'Book Jumpstart Service',
       description: 'Get your vehicle running with our quick jump start service. Same-day service within Cherthala!',
-      icon: '⚡',
+      icon:AkarIconsThunder,
       hasButton: true,
     }
   ];
@@ -124,7 +124,7 @@ export default function ServicesPage() {
     const totalCost = inverterCost + batteryCost;
 
     setQuoteResult([
-      `Quote for ${bhk} BHK, ${backupTime} Hours Backup:`,
+      `Quote:${bhk} BHK, ${backupTime} H Backup:`,
       `Inverter: ~${baseWattage}W, ₹${inverterCost.toFixed(0)}`,
       `Battery: ~${batteryCapacity.toFixed(0)}Ah, ₹${batteryCost.toFixed(0)}`,
       `Estimated Total: ₹${totalCost.toFixed(0)}`,

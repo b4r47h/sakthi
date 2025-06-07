@@ -28,7 +28,7 @@ export default function RootLayout({
             bg-[url('/back.png')]
             md:bg-[url('/back.png')]`}>
         <LanguageProvider>
-          <div className="min-h-screen flex flex-col space-y-6 px-4 md:px-10 py-8">
+          <div className="min-h-screen flex flex-col md:space-y-6 px-4 md:px-10 md:py-8">
             <div className="">
               <Header />
             </div>
@@ -45,8 +45,8 @@ export default function RootLayout({
           <a href="https://bkportfolio.web.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="made by" className="hover:text-blue-700 m-4 text-gray-400 justify-center flex text-sm">
-                <Copyright className="w-4 h-4 inline" />b4r47h
+                aria-label="made by" className="text-xs hover:text-blue-700 m-4 text-gray-600 justify-center flex">
+                <Copyright className="w-4 h-4 inline" />2025
             </a>
       </body>
     </html>
