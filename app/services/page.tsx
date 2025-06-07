@@ -1,5 +1,4 @@
 'use client';
-import AkarIconsThunder from '@/components/ui/AkarIconsThunder'
 import { useState,useEffect} from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -11,7 +10,6 @@ import { getMakes, getModels, getFuelTypes, setVehicleSelection, getStoredVehicl
 interface Service {
   name: string;
   description: string;
-  icon: string;
   hasButton?: boolean;
 }
 
@@ -20,8 +18,7 @@ export default function ServicesPage() {
   const services: Service[] = [
     {
       name: 'Book Jumpstart Service',
-      description: 'Get your vehicle running with our quick jump start service. Same-day service within Cherthala!',
-      icon:AkarIconsThunder,
+      description: 'Get your vehicle running with our quick jump start service.',
       hasButton: true,
     }
   ];

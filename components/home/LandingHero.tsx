@@ -2,10 +2,10 @@
 'use client'; // This directive is required because we use client-side features
 
 import React from 'react';
-import { Button } from '@/components/ui/button'; // Reusable button component from shadcn/ui
-import { BatteryCharging, Bolt } from 'lucide-react'; // Icons
-import { useRouter } from 'next/router';
-import Link from 'next/link'; // Link component for navigation
+import { Button } from '@/components/ui/button';
+import { BatteryCharging, Bolt } from 'lucide-react';
+import Link from 'next/link';
+import ElementTransition from '@/components/ui/PageTransition';
 
 
 export default function LandingHero() {
@@ -20,22 +20,26 @@ export default function LandingHero() {
           Dead battery? No problem. Get fast, <b>same-day delivery</b> and <b>free installation</b> within a 7km radius. Reliable service, right when you need it.
         </p>
         {/* Call-to-action buttons */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-          <Button
-            size="lg"
-            className="m-4 bg-white text-red-700 hover:bg-gray-100 animate-fade-up animation-delay-400 hover:scale-105 hover:shadow-lg transition-transform duration-300"
-          >
-            <BatteryCharging className="mr-4 h-5 w-5" />
-            <Link href="/products">Browse All Products</Link>
-          </Button>
-          <Button
-            size="lg"
-            className="bg-white text-blue-700 hover:bg-gray-100 hover:scale-110 hover:shadow-lg transition-transform duration-300"
-          >
-            <Bolt className="mr-4 h-5 w-5" />
-            <Link href="/services">Services Offered</Link>
-          </Button>
-        </div>
+        <ElementTransition>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+
+            <Button
+              size="lg"
+              className="m-4 bg-white text-red-700 hover:bg-gray-100 animate-fade-up animation-delay-400 hover:scale-105 hover:shadow-lg transition-transform duration-300"
+            >
+              <BatteryCharging className="mr-4 h-5 w-5" />
+              <Link href="/products">Browse All Products</Link>
+            </Button>
+
+            <Button
+              size="lg"
+              className="bg-white text-blue-700 hover:bg-gray-100 hover:scale-110 hover:shadow-lg transition-transform duration-300"
+            >
+              <Bolt className="mr-4 h-5 w-5" />
+              <Link href="/services">Services Offered</Link>
+            </Button>
+          </div>
+        </ElementTransition>
       </div>
       {/* Gradient overlay at the bottom */}
 
