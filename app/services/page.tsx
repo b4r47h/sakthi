@@ -1,5 +1,4 @@
 'use client';
-import AkarIconsThunder from '@/components/ui/AkarIconsThunder'
 import { useState,useEffect} from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -7,11 +6,11 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Label } from '@/components/ui/label';
 import { fetchUserLocation, calculateDistance, getStoredLocation, Location } from '@/lib/location';
 import { getMakes, getModels, getFuelTypes, setVehicleSelection, getStoredVehicle, Vehicle } from '@/lib/vehicle';
+import { MessageCircle } from 'lucide-react';
 
 interface Service {
   name: string;
   description: string;
-  icon: string;
   hasButton?: boolean;
 }
 
@@ -19,9 +18,8 @@ export default function ServicesPage() {
   // Array of services
   const services: Service[] = [
     {
-      name: 'Book Jumpstart Service',
-      description: 'Get your vehicle running with our quick jump start service. Same-day service within Cherthala!',
-      icon:AkarIconsThunder,
+      name: 'Step 1:',
+      description: 'Get to know the pricing',
       hasButton: true,
     }
   ];
@@ -75,15 +73,12 @@ export default function ServicesPage() {
       const now = new Date();
       const hour = now.getHours();
       const baseFare = hour >= 21 ? 600 : 300; // Before 9 PM: ₹300, after 9 PM: ₹600
-      const fuelCostPerKm = 107 / 20; // ₹107 per liter, 20 km/l = ₹5.35 per km
-      const travelExpense = dist * fuelCostPerKm;
-      const total = baseFare + travelExpense;
+      const total = baseFare;
       setTotalFare(total);
 
       setFareDetails([
         `Base Fare: ₹${baseFare.toFixed(2)}`,
-        `Travel Expense (${dist} km): ₹${travelExpense.toFixed(2)}`,
-        `Total Fare: ₹${total.toFixed(2)}`,
+        `Total Fare: ₹${total.toFixed(2)} + Travel Expense(Free within 5km's)`,
       ]);
     } catch (error: any) {
       alert(error.message);
@@ -102,7 +97,7 @@ export default function ServicesPage() {
       return;
     }
     const googleMapsLink = `https://maps.google.com/?q=${userLocation.lat},${userLocation.lng}`;
-    const message = `Jump Start Request for Sakthi Batteries\nVehicle: ${storedVehicle.make} ${storedVehicle.model}, ${storedVehicle.fuelType}\nLocation: ${googleMapsLink}\nTotal Fare: ₹${totalFare.toFixed(2)}`;
+    const message = `Jump Start Request\nVehicle: ${storedVehicle.make} ${storedVehicle.model}, ${storedVehicle.fuelType}\nLocation: ${googleMapsLink}\nTotal Fare: ₹${totalFare.toFixed(2)}`;
     const encodedMessage = encodeURIComponent(message);
     const whatsappLink = `https://wa.me/+918589952902?text=${encodedMessage}`;
     window.open(whatsappLink, '_blank');
@@ -127,21 +122,21 @@ export default function ServicesPage() {
       `Quote:${bhk} BHK, ${backupTime} H Backup:`,
       `Inverter: ~${baseWattage}W, ₹${inverterCost.toFixed(0)}`,
       `Battery: ~${batteryCapacity.toFixed(0)}Ah, ₹${batteryCost.toFixed(0)}`,
-      `Estimated Total: ₹${totalCost.toFixed(0)}`,
-      `Contact us at 8589952902 to confirm and proceed!`,
+      `Estimated Total(Approximate): ₹${totalCost.toFixed(0)}`,
+      `Contact us at 9947262266 to confirm and proceed!`,
     ]);
   };
 
   return (
-    <div className="min-h-screen rounded-full backdrop-blur-lg text-gray-400 flex flex-col">
-      <main className="container mx-auto p-8">
+    <div className="min-h-screen flex flex-col relative">
+      <main className="mx-auto p-8 space-y-12 text-white flex flex-col">
         {/* Vehicle Selection Form */}
         {!vehicleSelected && (
-          <section className="mb-12 p-6">
-            <h2 className="text-3xl font-bold text-center mb-6">Select Your Vehicle</h2>
+          <section className="rounded-3xl bg-gray-300 text-card-foreground shadow-sm p-8">
+            <h2 className="text-3xl font-bold text-center mb-6">Book A Jump Start</h2>
             <div className="max-w-md mx-auto space-y-6">
               <div>
-                <Label htmlFor="make">Vehicle Make</Label>
+                <Label htmlFor="make">Before going forward please tell us what you drive</Label>
                 <Select onValueChange={setSelectedMake}>
                   <SelectTrigger id="make">
                     <SelectValue placeholder="Select Make" />
@@ -196,33 +191,34 @@ export default function ServicesPage() {
 
         {/* Services Section */}
         {vehicleSelected && (
-          <section className="mb-12">
+          <section className="mb-12 flex flex-col justify-center">
             <h2 className="text-3xl font-bold text-center mb-6">Our Services</h2>
             <div className="gap-6 md:grid-cols-2 flex justify-center lg:grid-cols-3">
               {services.map((service) => (
                 <Card key={service.name}>
                   <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      {service.icon} {service.name}
+                    <CardTitle className="flex justify-center gap-2">
+                       {service.name}
                     </CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex justify-center flex-col">
                     <p className="mb-4">{service.description}</p>
                     {service.hasButton && (
-                      <Button onClick={bookJumpStart}>Book Jump Start</Button>
+                      <Button onClick={bookJumpStart}>Click Here To Continue</Button>
                     )}
                   </CardContent>
                 </Card>
               ))}
             </div>
             {fareDetails.length > 0 && (
-              <div className="mt-6 p-4 rounded-lg shadow">
-                <h3 className="text-lg font-semibold mb-2">Fare Breakdown</h3>
+              <div className="mt-6 p-4 rounded-3xl shadow flex flex-col backdrop-blur-3xl">
+                <h3 className="text-lg font-semibold mb-2">Price Breakdown</h3>
                 {fareDetails.map((detail, index) => (
                   <p key={index}>{detail}</p>
                 ))}
                 <Button className="mt-4" onClick={sendWhatsApp}>
-                  Send via WhatsApp
+                  <MessageCircle className="m-4 h-4"/>
+                  Book Via WhatsApp
                 </Button>
               </div>
             )}
@@ -230,8 +226,9 @@ export default function ServicesPage() {
         )}
 
         {/* Quote Form Section */}
-        <section className="p-6 rounded-lg shadow">
-          <h2 className="text-3xl font-bold text-center mb-6">Get a Quote for Inverter & Battery</h2>
+        <section className="rounded-3xl bg-gray-300 text-card-foreground shadow-sm p-8">
+          <h2 className="text-3xl font-bold text-center mb-6">Price Calculator</h2>
+          <p className="pb-12">You can get a rough pricing for the battery and inverter based on your needs.</p>
           <div className="max-w-md mx-auto space-y-6">
             <div>
               <Label htmlFor="bhk">BHK of Your Home</Label>
@@ -261,7 +258,7 @@ export default function ServicesPage() {
                 </SelectContent>
               </Select>
             </div>
-            <Button onClick={handleQuote}>Get Quote</Button>
+            <Button onClick={handleQuote}>Calculate Price</Button>
             {quoteResult.length > 0 && (
               <div className="mt-4 p-4 rounded-lg">
                 {quoteResult.map((line, index) => (

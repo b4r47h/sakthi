@@ -41,7 +41,7 @@ export default function CategorySection() {
                 className="hover:scale-105 hover:shadow-lg transition-transform duration-300"
               >
                 <CardContent className="p-6 text-center">
-                  <Icon className="w-12 h-12 mx-auto m-4 text-blue-700" />
+                  <Icon className="w-12 h-12 mx-auto m-4" />
                   <h3 className="text-xl font-semibold mb-2">
                     {category.name}
                   </h3>
