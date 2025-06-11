@@ -14,10 +14,10 @@ export default function Header() {
         </Link>
 
         <div className="mt-2 md:mt-0 flex-coltext-sm text-yellow-400 md:text-base">
-          <a href="https://maps.app.goo.gl/sZVV8vBYYktg7FecA" target="_blank" rel="noopener noreferrer">
+          <a href="https://maps.app.goo.gl/xNkRsT7P6w1LjyS89" target="_blank" rel="noopener noreferrer">
             <p className="flex items-center gap-2">
               <MapPin className="w-4 h-4 " />
-              Cherthala
+              Locate us
 
             </p>
           </a>

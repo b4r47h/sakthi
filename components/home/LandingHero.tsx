@@ -21,19 +21,19 @@ export default function LandingHero() {
         </p>
         {/* Call-to-action buttons */}
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-          <Button
+        <Button
             size="lg"
-            className="m-4 bg-white text-red-700 hover:bg-gray-100 animate-fade-up animation-delay-400 hover:scale-105 hover:shadow-lg transition-transform duration-300"
-          >
-            <BatteryCharging className="mr-4 h-5 w-5" />
-            <Link href="/products">Browse All Products</Link>
-          </Button>
-          <Button
-            size="lg"
-            className="bg-white text-blue-700 hover:bg-gray-100 hover:scale-110 hover:shadow-lg transition-transform duration-300"
+            className="bg-white w-full text-blue-700 hover:bg-gray-100 hover:scale-110 hover:shadow-lg transition-transform duration-300"
           >
             <Bolt className="mr-4 h-5 w-5" />
             <Link href="/services">Services Offered</Link>
+          </Button>
+          <Button
+            size="lg"
+            className="m-4 cursor-not-allowed line-through bg-white text-red-700 hover:bg-gray-100 animate-fade-up animation-delay-400 hover:scale-105 hover:shadow-lg transition-transform duration-300"
+          >
+            <BatteryCharging className="mr-4 h-5 w-5" />
+            <Link href="/products">Browse All Products</Link>
           </Button>
         </div>
       </div>

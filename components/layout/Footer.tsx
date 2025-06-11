@@ -12,7 +12,7 @@ export default function Footer() {
                         Sakthi Batteries<AkarIconsThunder className="w-4 h-4"/>Autoelectricals
                     </h2>
                     <p>Cherthala, Kerala</p>
-                    <p>Phone: 8589952902 / 9947262266</p>
+                    <p>Phone:9947262266</p>
                     <p>
                         We deal in Motorcycle, Automotive & Inverter Batteries,
                         
