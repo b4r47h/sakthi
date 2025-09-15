@@ -7,30 +7,31 @@ import AkarIconsThunder from '../ui/AkarIconsThunder';
 
 export default function Header() {
   return (
-    <header className="text-white py-5 md:py-10 shadow-lg flex backdrop-brightness-200 rounded-3xl items-center">
-      <div className="container mx-auto flex flex-col gap-4 items-center justify-center px-4">
-        <Link href="/" className="flex gap-2 text-2xl md:text-6xl justify-between font-bold">
-        <p>Sakthi Batteries</p><p><AkarIconsThunder className="w-10 h-10"/></p><p>Auto Electricals</p>
+    <header className="text-red-500 py-4 md:py-10 shadow-lg sticky justify-between">
+      <div className="container flex flex-col gap-4 items-center">
+        <Link href="/" className="flex flex-col">
+          <p className="text-3xl text-red-600 md:text-6xl justify-center font-bold">
+            SAKTHI 
+          </p>
+          <p>Batteries And Auto Electricals</p>
         </Link>
-
-        <div className="mt-2 md:mt-0 flex-coltext-sm text-yellow-400 md:text-base">
-          <a href="https://maps.app.goo.gl/YePfQwTTJQbywNEy7" target="_blank" rel="noopener noreferrer">
-            <p className="flex items-center gap-2">
+        <div className="md:mt-0 flex-col text-sm text-yellow-400 md:text-base">
+          <a href="https://maps.app.goo.gl/xNkRsT7P6w1LjyS89" target="_blank" rel="noopener noreferrer">
+            <p className="flex items-center gap-2 p-2">
               <MapPin className="w-4 h-4 " />
-              Cherthala
-
+              Find us
             </p>
           </a>
           <a href='tel:9947262266'>
-            <p className="flex items-center gap-2">
+            <p className="flex items-center gap-2 bg-green-700 p-2 rounded-full">
 
-              <PhoneCall className="w-4 h-4" />9947262266
+              <PhoneCall className="w-4 h-4" />Call now
 
             </p>
           </a>
         </div>
       </div>
-      
+
     </header>
   )
 }

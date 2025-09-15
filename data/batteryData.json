@@ -1,0 +1,501 @@
+{
+  "vehicleBatteryData": {
+    "cars_lmv": {
+      "Maruti Alto": {
+        "battery_options": [
+          {
+            "battery_code": "38B20L",
+            "voltage": "12V",
+            "capacity_ah": 35,
+            "cca": "270-300A",
+            "dimensions_mm": "197x129x227",
+            "weight_kg": 10.8,
+            "price_range_inr": "₹3500-4800",
+            "warranty_months": 60,
+            "brand_models": {
+              "Exide": {
+                "model": "FML0-ML38B20L",
+                "price": "₹3650-4819",
+                "warranty": "60 months (30+30 pro-rata)",
+                "special_features": ["Enhanced flooded battery", "Vibration resistant"]
+              },
+              "Amaron": {
+                "model": "38B20L Standard",
+                "price": "₹3500-4200",
+                "warranty": "48 months",
+                "special_features": ["Long life", "Temperature resistant"]
+              },
+              "SF Sonic": {
+                "model": "38B20L Series",
+                "price": "₹3400-4000",
+                "warranty": "42 months",
+                "special_features": ["Fast charging", "Low maintenance"]
+              }
+            }
+          }
+        ]
+      },
+      "Maruti Swift": {
+        "battery_options": [
+          {
+            "battery_code": "DIN44",
+            "voltage": "12V",
+            "capacity_ah": 44,
+            "cca": "330-480A",
+            "dimensions_mm": "238x129x204",
+            "weight_kg": 12.9,
+            "price_range_inr": "₹4500-6000",
+            "warranty_months": 60,
+            "din_code": "DIN44",
+            "brand_models": {
+              "Exide": {
+                "model": "DIN44 Mileage",
+                "price": "₹5200-6000",
+                "warranty": "60 months"
+              },
+              "Amaron": {
+                "model": "DIN44 Pro",
+                "price": "₹4800-5600",
+                "warranty": "48 months"
+              },
+              "SF Sonic": {
+                "model": "DIN44 Flash",
+                "price": "₹4500-5200",
+                "warranty": "42 months"
+              }
+            }
+          }
+        ]
+      },
+      "Honda City": {
+        "battery_options": [
+          {
+            "battery_code": "DIN55",
+            "voltage": "12V",
+            "capacity_ah": 55,
+            "cca": "450-590A",
+            "dimensions_mm": "260x173x204",
+            "weight_kg": 16.6,
+            "price_range_inr": "₹6000-8000",
+            "warranty_months": 60,
+            "din_code": "DIN55",
+            "brand_models": {
+              "Exide": {
+                "model": "DIN55 Matrix",
+                "price": "₹7200-8000",
+                "warranty": "72 months"
+              },
+              "Amaron": {
+                "model": "DIN55 Hi-Life",
+                "price": "₹6500-7500",
+                "warranty": "60 months"
+              },
+              "SF Sonic": {
+                "model": "DIN55 Stan-Master",
+                "price": "₹6000-6800",
+                "warranty": "48 months"
+              }
+            }
+          }
+        ]
+      },
+      "Hyundai i20": {
+        "battery_options": [
+          {
+            "battery_code": "DIN44",
+            "voltage": "12V",
+            "capacity_ah": 44,
+            "cca": "330-400A",
+            "dimensions_mm": "238x129x204",
+            "weight_kg": 13.0,
+            "price_range_inr": "₹4600-6100",
+            "warranty_months": 60,
+            "din_code": "DIN44",
+            "brand_models": {
+              "Exide": {
+                "model": "DIN44 InvaRed",
+                "price": "₹5300-6100",
+                "warranty": "60 months",
+                "special_features": ["High cranking power", "Corrosion resistant"]
+              },
+              "Amaron": {
+                "model": "DIN44 Pro",
+                "price": "₹4900-5700",
+                "warranty": "48 months",
+                "special_features": ["Premium performance", "Long life"]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "scooters": {
+      "battery_by_cc": {
+        "100cc": {
+          "common_vehicles": ["Honda Activa", "TVS Jupiter", "Suzuki Access", "Hero Maestro"],
+          "shared_battery": {
+            "battery_code": "YTZ4",
+            "voltage": "12V",
+            "capacity_ah": 3.5,
+            "dimensions_mm": "113x70x85",
+            "weight_kg": 1.5,
+            "price_range_inr": "₹280-450",
+            "brand_options": ["Exide", "Amaron", "SF Sonic", "Bosch"]
+          }
+        },
+        "110cc": {
+          "common_vehicles": ["Honda Activa 110", "TVS Jupiter 110", "Hero Pleasure", "Yamaha Fascino"],
+          "shared_battery": {
+            "battery_code": "YTZ4V",
+            "voltage": "12V",
+            "capacity_ah": 4.0,
+            "dimensions_mm": "113x70x85",
+            "weight_kg": 1.6,
+            "price_range_inr": "₹320-480",
+            "brand_options": ["Exide", "Amaron", "SF Sonic", "Bosch"]
+          }
+        },
+        "125cc": {
+          "common_vehicles": ["Honda Activa 125", "TVS NTorq", "Suzuki Access 125", "Hero Maestro Edge"],
+          "shared_battery": {
+            "battery_code": "YTX5L",
+            "voltage": "12V",
+            "capacity_ah": 4.5,
+            "dimensions_mm": "113x70x130",
+            "weight_kg": 1.7,
+            "price_range_inr": "₹350-520",
+            "brand_options": ["Exide", "Amaron", "SF Sonic", "Bosch"]
+          }
+        },
+        "150cc": {
+          "common_vehicles": ["Honda PCX", "Yamaha Aerox", "TVS NTORQ 150", "Aprilia SR 150"],
+          "shared_battery": {
+            "battery_code": "YTX7A",
+            "voltage": "12V",
+            "capacity_ah": 6.5,
+            "dimensions_mm": "150x87x105",
+            "weight_kg": 2.5,
+            "price_range_inr": "₹420-680",
+            "brand_options": ["Exide", "Amaron", "SF Sonic"]
+          }
+        }
+      }
+    },
+    "motorcycles": {
+      "Royal Enfield Classic 350": {
+        "battery_options": [
+          {
+            "battery_code": "YTX9",
+            "voltage": "12V",
+            "capacity_ah": 8,
+            "cca": "120-140A",
+            "dimensions_mm": "150x87x105",
+            "weight_kg": 2.8,
+            "price_range_inr": "₹1200-1800",
+            "warranty_months": 18,
+            "brand_models": {
+              "Exide": {
+                "model": "YTX9-BS Bike",
+                "price": "₹1500-1800",
+                "warranty": "18 months",
+                "special_features": ["Maintenance free", "Vibration resistant"]
+              },
+              "Amaron": {
+                "model": "YTX9 Pro Bike",
+                "price": "₹1350-1650",
+                "warranty": "15 months",
+                "special_features": ["High cranking", "Long life"]
+              }
+            }
+          }
+        ]
+      },
+      "Bajaj Pulsar 150": {
+        "battery_options": [
+          {
+            "battery_code": "YTX7A",
+            "voltage": "12V",
+            "capacity_ah": 6.5,
+            "cca": "100-120A",
+            "dimensions_mm": "150x87x105",
+            "weight_kg": 2.4,
+            "price_range_inr": "₹950-1400",
+            "warranty_months": 15,
+            "brand_models": {
+              "Exide": {
+                "model": "YTX7A-BS",
+                "price": "₹1200-1400",
+                "warranty": "15 months",
+                "special_features": ["Sealed maintenance free", "High performance"]
+              },
+              "Amaron": {
+                "model": "YTX7A Bike Pro",
+                "price": "₹1100-1300",
+                "warranty": "12 months",
+                "special_features": ["Zero spillage", "Temperature resistant"]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "three_wheeler": {
+      "Piaggio Ape Auto": {
+        "battery_options": [
+          {
+            "battery_code": "32C24",
+            "voltage": "12V",
+            "capacity_ah": 32,
+            "cca": "240-280A",
+            "dimensions_mm": "195x130x200",
+            "weight_kg": 9.2,
+            "price_range_inr": "₹3100-4300",
+            "warranty_months": 36,
+            "brand_models": {
+              "Exide": {
+                "model": "32C24 Ape Special",
+                "price": "₹3600-4300",
+                "warranty": "36 months",
+                "special_features": ["Piaggio approved", "Deep cycle", "Heat resistant"]
+              },
+              "Amaron": {
+                "model": "32C24 Three Wheeler",
+                "price": "₹3300-3900",
+                "warranty": "30 months",
+                "special_features": ["Commercial grade", "High cranking", "Maintenance free"]
+              },
+              "SF Sonic": {
+                "model": "32C24 Ape Pro",
+                "price": "₹3100-3700",
+                "warranty": "24 months",
+                "special_features": ["Cost effective", "Reliable start", "Ape optimized"]
+              }
+            }
+          }
+        ]
+      },
+      "Piaggio Ape City": {
+        "battery_options": [
+          {
+            "battery_code": "35AH",
+            "voltage": "12V",
+            "capacity_ah": 35,
+            "cca": "250-300A",
+            "dimensions_mm": "197x129x227",
+            "weight_kg": 10.5,
+            "price_range_inr": "₹3400-4600",
+            "warranty_months": 36,
+            "brand_models": {
+              "Exide": {
+                "model": "35AH City Special",
+                "price": "₹3900-4600",
+                "warranty": "36 months",
+                "special_features": ["City optimized", "Enhanced capacity", "Durable"]
+              },
+              "Amaron": {
+                "model": "35AH Commercial Plus",
+                "price": "₹3600-4200",
+                "warranty": "30 months",
+                "special_features": ["Commercial duty", "Temperature resistant", "Long life"]
+              }
+            }
+          }
+        ]
+      },
+      "Mahindra Alfa Plus": {
+        "battery_options": [
+          {
+            "battery_code": "32C24R",
+            "voltage": "12V",
+            "capacity_ah": 32,
+            "cca": "250-290A",
+            "dimensions_mm": "195x130x200",
+            "weight_kg": 9.8,
+            "price_range_inr": "₹3300-4600",
+            "warranty_months": 36,
+            "brand_models": {
+              "Exide": {
+                "model": "32C24R Alfa Special",
+                "price": "₹3900-4600",
+                "warranty": "36 months",
+                "special_features": ["Alfa compatible", "Reverse terminal", "Heavy duty"]
+              },
+              "Amaron": {
+                "model": "32C24R Commercial Plus",
+                "price": "₹3600-4300",
+                "warranty": "30 months",
+                "special_features": ["Commercial grade", "Temperature resistant", "Quick charge"]
+              },
+              "SF Sonic": {
+                "model": "32C24R Alfa Pro",
+                "price": "₹3300-3900",
+                "warranty": "24 months",
+                "special_features": ["Alfa optimized", "Value pricing", "Reliable performance"]
+              }
+            }
+          }
+        ]
+      },
+      "Mahindra Alfa Load": {
+        "battery_options": [
+          {
+            "battery_code": "38B20L",
+            "voltage": "12V",
+            "capacity_ah": 35,
+            "cca": "270-320A",
+            "dimensions_mm": "197x129x227",
+            "weight_kg": 10.9,
+            "price_range_inr": "₹3500-4800",
+            "warranty_months": 36,
+            "brand_models": {
+              "Exide": {
+                "model": "38B20L Load Master",
+                "price": "₹4100-4800",
+                "warranty": "36 months",
+                "special_features": ["Load optimized", "Enhanced durability", "Commercial use"]
+              },
+              "Amaron": {
+                "model": "38B20L Load Pro",
+                "price": "₹3700-4400",
+                "warranty": "30 months",
+                "special_features": ["Load carrier grade", "Zero maintenance", "Long life"]
+              }
+            }
+          }
+        ]
+      },
+      "TVS King": {
+        "battery_options": [
+          {
+            "battery_code": "38B20L",
+            "voltage": "12V",
+            "capacity_ah": 35,
+            "cca": "270-300A",
+            "dimensions_mm": "197x129x227",
+            "weight_kg": 10.8,
+            "price_range_inr": "₹3500-4800",
+            "warranty_months": 36,
+            "brand_models": {
+              "Exide": {
+                "model": "38B20L Auto King",
+                "price": "₹4100-4800",
+                "warranty": "36 months",
+                "special_features": ["TVS approved", "Enhanced durability", "Commercial use"]
+              },
+              "Amaron": {
+                "model": "38B20L King Pro",
+                "price": "₹3700-4400",
+                "warranty": "30 months",
+                "special_features": ["King optimized", "Zero maintenance", "Long life"]
+              },
+              "SF Sonic": {
+                "model": "38B20L King Special",
+                "price": "₹3500-4100",
+                "warranty": "24 months",
+                "special_features": ["TVS compatible", "Cost effective", "Reliable start"]
+              }
+            }
+          }
+        ]
+      },
+      "Force Tempo Traveller": {
+        "battery_options": [
+          {
+            "battery_code": "DIN88",
+            "voltage": "12V",
+            "capacity_ah": 88,
+            "cca": "680-750A",
+            "dimensions_mm": "353x175x190",
+            "weight_kg": 25.5,
+            "price_range_inr": "₹12000-16000",
+            "warranty_months": 48,
+            "din_code": "DIN88",
+            "brand_models": {
+              "Exide": {
+                "model": "DIN88 Traveller",
+                "price": "₹14500-16000",
+                "warranty": "48 months",
+                "special_features": ["Heavy duty", "Passenger vehicle grade", "Deep cycle"]
+              },
+              "Amaron": {
+                "model": "DIN88 Tempo Pro",
+                "price": "₹13500-15200",
+                "warranty": "42 months",
+                "special_features": ["High cranking", "Vibration resistant", "Long life"]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "trucks_hmv": {
+      "Tata 407": {
+        "battery_options": [
+          {
+            "battery_code": "DIN88",
+            "voltage": "12V",
+            "capacity_ah": 88,
+            "cca": "680-750A",
+            "dimensions_mm": "353x175x190",
+            "weight_kg": 25.5,
+            "price_range_inr": "₹12000-16000",
+            "warranty_months": 48,
+            "din_code": "DIN88",
+            "brand_models": {
+              "Exide": {
+                "model": "DIN88 Commercial",
+                "price": "₹14500-16000",
+                "warranty": "48 months",
+                "special_features": ["Heavy duty", "Commercial grade", "Deep cycle"]
+              },
+              "Amaron": {
+                "model": "DIN88 Truck Pro",
+                "price": "₹13500-15200",
+                "warranty": "42 months",
+                "special_features": ["High cranking", "Vibration resistant", "Long life"]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "commonBatteries": [
+    {
+      "title": "100cc Scooter",
+      "code": "YTZ4",
+      "capacity": "3.5Ah",
+      "price": "₹280-450",
+      "vehicles": ["Honda Activa", "TVS Jupiter"],
+      "category": "scooters",
+      "icon": "🛵"
+    },
+    {
+      "title": "125cc Scooter",
+      "code": "YTX5L",
+      "capacity": "4.5Ah",
+      "price": "₹350-520",
+      "vehicles": ["Activa 125", "NTorq"],
+      "category": "scooters",
+      "icon": "🛵"
+    },
+    {
+      "title": "Small Car",
+      "code": "38B20L",
+      "capacity": "35Ah",
+      "price": "₹3500-4800",
+      "vehicles": ["Alto", "i10"],
+      "category": "cars_lmv",
+      "icon": "🚗"
+    },
+    {
+      "title": "3-Wheeler",
+      "code": "32C24",
+      "capacity": "32Ah",
+      "price": "₹3100-4600",
+      "vehicles": ["Piaggio Ape", "Alfa"],
+      "category": "three_wheeler",
+      "icon": "🛺"
+    }
+  ]
+}

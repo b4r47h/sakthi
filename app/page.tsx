@@ -1,15 +1,24 @@
-// Home page component - This is the landing page of the application
-// It uses server-side rendering by default in Next.js 13+
 import { Metadata } from 'next';
+import ServicesSection from '@/components/home/ServicesSection';
 import LandingHero from '@/components/home/LandingHero';
-import CategorySection from '@/components/home/CategorySection';
-//import { Header } from '@radix-ui/react-accordion';
-
 // Page-specific metadata that overrides the default metadata from layout.tsx
 export const metadata: Metadata = {
-  title: 'Sakthi Batteries - Automotive & Inverter Batteries in Cherthala',
-  description: 'Buy automotive and inverter batteries in Cherthala with same-day delivery. Smart charging and jump-start services available!',
-  keywords: 'buy batteries Cherthala, inverter battery Kerala, rickshaw battery shop',
+  title: 'Sakthi Batteries and Autoelectricals,best battery shop in Cherthala,spareparts,autoelectricals',
+  description: 'Buy batteries in Cherthala - Your local battery shop and auto electrical spare parts store. Professional horn repair services available. Located in Cherthala, Kerala.',
+  openGraph: {
+    title: 'Sakthi Batteries and Autoelectricals',
+    description: 'Best Battery Shop and Autoelectricals in Cherthala, Kerala. We specialize in automotive batteries, inverter batteries,autoelectrical spares,starter repairing,alternator repairing and Solar batteries.Find the cheapest batteries and workshop works in Cherthala',
+    type: 'website',
+    locale: 'en_IN',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  viewport: 'width=device-width, initial-scale=1',
+  alternates: {
+    canonical: 'https://sakthi-app.vercel.app'
+  },
 };
 
 // Main home page component
@@ -17,8 +26,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <LandingHero /> {/* Hero section with main call-to-action */}
-      <CategorySection /> {/* Display different product categories */}
+      <LandingHero/>{/* Interactive battery finder tool */}
+      <ServicesSection /> {/* Section displaying services offered */}
     </main>
   );
 }

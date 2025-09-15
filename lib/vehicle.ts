@@ -6,10 +6,11 @@ export interface Vehicle {
 
 // Static vehicle data for prototype (common in India)
 const VEHICLES = [
-  { make: 'Tata', models: ['Nexon', 'Harrier', 'Safari'], fuelTypes: ['petrol', 'diesel'] as const },
-  { make: 'Maruti Suzuki', models: ['Swift', 'Baleno', 'Brezza'], fuelTypes: ['petrol', 'diesel'] as const },
-  { make: 'Hyundai', models: ['Creta', 'Venue', 'i20'], fuelTypes: ['petrol', 'diesel', 'hybrid'] as const },
-  { make: 'Mahindra', models: ['Thar', 'Scorpio', 'XUV700'], fuelTypes: ['petrol', 'diesel'] as const },
+  { make: 'Tata', models: ['Nexon', 'Harrier', 'Safari','Indica Vista','Punch','Tiago','Tigor','Altroz','Indigo Manza','Prima','Intra','407'], fuelTypes: ['petrol/CNG', 'diesel','hybrid'] as const },
+  { make: 'Maruti Suzuki', models: ['Swift', 'Baleno', 'Brezza','Grand Vitara','Fronx','Ertiga','Wagon R','Alto 800/K10','Espresso','A-star','Maruti 800','Kizashi','S-cross','Ciaz'], fuelTypes: ['petrol/CNG', 'diesel','hybrid'] as const },
+  { make: 'Hyundai', models: ['i10','Aura','Xccent','Eon','Alcazar','Santafe','Verna','Santro','Creta', 'Venue', 'i20'], fuelTypes: ['petrol', 'diesel', 'hybrid'] as const },
+  { make: 'Mahindra', models: ['KUV300','XUV300','TUV300','Bolero Neo','Bolero','XUV500','Xylo','Verito','Thar', 'Scorpio', 'XUV700'], fuelTypes: ['petrol', 'diesel'] as const },
+  { make: 'Toyota', models: ['Etios','Innova','Crysta','Hycross','Hyrider','Fortuner','Vellfire','Prado','Land Cruiser'], fuelTypes: ['petrol', 'diesel','Hybrid'] as const }
 ];
 
 const VEHICLE_STORAGE_KEY = 'selected_vehicle';
