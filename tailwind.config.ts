@@ -82,11 +82,40 @@ const config: Config = {
           '0%, 100%': { boxShadow: '0 0 10px #ff00ff' },
           '50%': { boxShadow: '0 0 20px #ff00ff' },
         },
+        fadeIn: {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
+        fadeOut: {
+          from: { opacity: '1' },
+          to: { opacity: '0' },
+        },
+        slideInLeft: {
+          from: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(0)' },
+        },
+        slideInRight: {
+          from: { transform: 'translateX(100%)' },
+          to: { transform: 'translateX(0)' },
+        },
+        bounce: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-25%)' },
+        },
+        spin: {
+          to: { transform: 'rotate(360deg)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         glow: 'glow 1.5s infinite',
+        fadeIn: 'fadeIn 0.5s ease-in',
+        fadeOut: 'fadeOut 0.5s ease-out',
+        slideInLeft: 'slideInLeft 0.5s ease-out',
+        slideInRight: 'slideInRight 0.5s ease-out',
+        bounce: 'bounce 1s infinite',
+        spin: 'spin 1s linear infinite',
       },
     },
   },

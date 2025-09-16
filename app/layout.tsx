@@ -3,7 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Roboto_Mono } from 'next/font/google';
 import Footer from '@/components/layout/Footer';
-import { Copyright } from 'lucide-react';
+import MatrixRain from '@/components/MatrixRain';
 
 const mono = Roboto_Mono({
   subsets: ['latin'],
@@ -27,20 +27,21 @@ export default function RootLayout({
   return (
     <html lang="en" className={mono.variable}>
       <body className={`${mono.className} bg-black`}>
-              
-          <div className=" min-h-screen flex flex-col md:space-y-6 px-4 md:px-10 md:py-8">
-            <div className="">
-              <Header />
-            </div>
-
-            <main className="flex-grow shadow-lg text-gray-300 rounded-lg p-4">
-              {children}
-            </main>
-
-            <div className="shadow-xl rounded-md p-4">
-              <Footer />
-            </div>
+<MatrixRain />
+        <div className=" min-h-screen flex flex-col md:space-y-6 px-2 md:px-10 md:py-8">
+          
+          <div>
+            <Header />
           </div>
+
+          <main className="flex-grow shadow-lg rounded-lg py-4">
+            {children}
+          </main>
+
+          <div className="shadow-xl rounded-md">
+            <Footer />
+          </div>
+        </div>
       </body>
     </html>
   );
